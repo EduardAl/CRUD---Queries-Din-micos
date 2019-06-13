@@ -130,14 +130,19 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
-    <Content Include="Contact.aspx" />
+    <Content Include="Editar.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="EditarPersona.aspx" />
+    <Content Include="EliminarPersona.aspx" />
+    <Content Include="IngresarPersona.aspx" />
+    <Content Include="MostrarPersonas.aspx" />
+    <Content Include="Vergrid.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Default.aspx" />
+    <Content Include="Ingresar.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -149,6 +154,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Eliminar.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -182,28 +188,64 @@
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\Class1.vb" />
     <Compile Include="App_Start\BundleConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
-    <Compile Include="About.aspx.designer.vb">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="Editar.aspx.designer.vb">
+      <DependentUpon>Editar.aspx</DependentUpon>
     </Compile>
-    <Compile Include="About.aspx.vb">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="Editar.aspx.vb">
+      <DependentUpon>Editar.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.vb">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Contact.aspx.vb">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.vb">
-      <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.designer.vb">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="EditarPersona.aspx.designer.vb">
+      <DependentUpon>EditarPersona.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarPersona.aspx.vb">
+      <DependentUpon>EditarPersona.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="EliminarPersona.aspx.designer.vb">
+      <DependentUpon>EliminarPersona.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarPersona.aspx.vb">
+      <DependentUpon>EliminarPersona.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="IngresarPersona.aspx.designer.vb">
+      <DependentUpon>IngresarPersona.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarPersona.aspx.vb">
+      <DependentUpon>IngresarPersona.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MostrarPersonas.aspx.designer.vb">
+      <DependentUpon>MostrarPersonas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarPersonas.aspx.vb">
+      <DependentUpon>MostrarPersonas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Vergrid.aspx.designer.vb">
+      <DependentUpon>Vergrid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vergrid.aspx.vb">
+      <DependentUpon>Vergrid.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Ingresar.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Ingresar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresar.aspx.designer.vb">
+      <DependentUpon>Ingresar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
@@ -248,6 +290,13 @@
     <Compile Include="Site.Mobile.Master.designer.vb">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="Eliminar.aspx.designer.vb">
+      <DependentUpon>Eliminar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar.aspx.vb">
+      <DependentUpon>Eliminar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -282,6 +331,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="capturas\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
